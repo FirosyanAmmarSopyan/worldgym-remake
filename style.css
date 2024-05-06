@@ -2,9 +2,13 @@
   padding: 0;
   margin: 0;
 }
+@font-face {
+  font-family: "lobster";
+ src: url(font/Lobster-Regular.ttf);
+}
 
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -56,6 +60,10 @@
 
 .nav-link a:hover::before {
   width: 100%;
+}
+
+.container-video{
+  object-fit: cover;
 }
 
 .btn-shop {
@@ -135,7 +143,7 @@
   border: none;
   border-bottom: 2px solid red;
   outline: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 ::placeholder {
   color: rgb(0, 0, 0);
@@ -167,6 +175,7 @@
 .why-world-gym {
   background-color: black;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .title-wwg {
@@ -174,34 +183,182 @@
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 16px;
+  font-family: "Platypi", serif;
+  margin-bottom: 22px;
 }
 
 .world-globe {
   display: flex;
-  justify-content: space-evenly;
   padding-left: 1rem;
   padding-right: 1rem;
+  justify-content: center;
+  gap: 20px;
 }
 .desc {
-  font-size: 18px;
+  font-size: 14px;
   color: white;
   text-align: center;
   line-height: 1.2rem;
   height: 10rem;
   overflow: hidden;
   width: 16rem;
-
+  font-family: "Merriweather", serif;
+  
 }
 
 .title-globe {
   color: white;
   text-align: center;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   margin-bottom: 12px;
+  margin-top: 12px;
+  font-family: "Inter" , sans-serif;
 }
 
 .segitiga-kanan {
   transform: scaleX(-1);
 }
+
+.container-step-4 {
+  padding: 70px;
+  position: relative;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.red-globe {
+  position: relative;
+}
+
+.red-globe img{
+  width: 600px;
+  height: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4.5em;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  line-height: 100%;
+  font-family: "Noto Serif", serif;
+}
+
+.blk{
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.ln-2{
+  font-weight: bolder;
+  font-size: 110px;
+}
+
+.ln-3{
+  font-weight: bolder;
+  font-size: 90px;
+}
+
+.ln-4{
+  font-weight: bolder;
+  font-size: 110px;
+}
+
+.container-input input {
+  height: 30px;
+  border-radius: 0;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  
+}
+
+.container-input label{
+  position: absolute;
+  font-size: 10px;
+  color: black;
+  text-align: center;
+  left: 125px;
+}
+
+.btn-submit-red-globe {
+  position: relative;
+  width: 60%;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  border-color: white;
+  border-width: 5px;
+  border-style: solid;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-submit-red-globe::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease-in-out;
+}
+
+.btn-submit-red-globe:hover::after {
+  width: 80%;
+}
+
+.btn-submit-red-globe:hover {
+  background-color: #ff002b;
+}
+
+.inner-img-container {
+  gap: 15px;
+  max-width: 100%;
+}
+
+.globe {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-globe {
+  height: 9.66rem;
+  width: 9.66rem;
+  align-self: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100%;
+  border-width: 15px;
+  border-color: #c41230;
+  border-style: solid;
+}
+.mini-arrow {
+  margin-top: -10px;
+}
+
+
+.spn-txt{
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: bolder;
+  position: absolute;
+    margin-top: -50px;  
+    font-family: lobster;
+}
+
+
