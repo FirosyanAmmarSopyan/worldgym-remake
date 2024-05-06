@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: "lobster";
- src: url(font/Lobster-Regular.ttf);
+  src: url(font/Lobster-Regular.ttf);
 }
 
 .header {
@@ -62,7 +62,7 @@
   width: 100%;
 }
 
-.container-video{
+.container-video {
   object-fit: cover;
 }
 
@@ -203,7 +203,6 @@
   overflow: hidden;
   width: 16rem;
   font-family: "Merriweather", serif;
-  
 }
 
 .title-globe {
@@ -211,7 +210,7 @@
   text-align: center;
   margin-bottom: 12px;
   margin-top: 12px;
-  font-family: "Inter" , sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .segitiga-kanan {
@@ -232,7 +231,7 @@
   position: relative;
 }
 
-.red-globe img{
+.red-globe img {
   width: 600px;
   height: 100%;
 }
@@ -251,46 +250,67 @@
   font-family: "Noto Serif", serif;
 }
 
-.blk{
+.blk {
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.ln-2{
+.ln-2 {
   font-weight: bolder;
   font-size: 110px;
 }
 
-.ln-3{
+.ln-3 {
   font-weight: bolder;
   font-size: 90px;
 }
 
-.ln-4{
+.ln-4 {
   font-weight: bolder;
   font-size: 110px;
 }
 
-.container-input input {
-  height: 30px;
-  border-radius: 0;
-  padding: 5px;
-  border: none;
-  text-align: center;
-  
+.input-group {
+  position: relative;
 }
 
-.container-input label{
-  position: absolute;
-  font-size: 10px;
-  color: black;
+.input {
+  border: none;
+  font-size: 1.2rem;
+  color: #000000;
   text-align: center;
-  left: 125px;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 70%;
+  height: 50px;
+}
+
+.user-label {
+  position: absolute;
+  left: 110px;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  pointer-events: none;
+  transform: translateY(1rem);
+  transition: 150ms cubic-bezier(0.1, 0, 0.2, 1);
+  margin-top: 5px;
+}
+
+.input:focus,
+input:valid {
+  outline: none;
+}
+
+.input:focus ~ label,
+input:valid ~ label {
+  transform: translateY(-2%) scale(0.7);
+  color: #000000;
 }
 
 .btn-submit-red-globe {
   position: relative;
-  width: 60%;
+  width: 50%;
   height: 50px;
   background-color: black;
   border: none;
@@ -326,8 +346,10 @@
 }
 
 .inner-img-container {
-  gap: 15px;
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .globe {
@@ -351,14 +373,86 @@
   margin-top: -10px;
 }
 
-
-.spn-txt{
+.spn-txt {
   color: rgb(0, 0, 0);
   font-size: 60px;
   font-weight: bolder;
   position: absolute;
-    margin-top: -50px;  
-    font-family: lobster;
+  margin-top: -50px;
+  font-family: lobster;
 }
+
+.container-img {
+  position: relative;
+  width: 100%;
+}
+.overlay-text-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32%;
+  height: 98.5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  box-sizing: border-box; 
+  transition: width 0.5s; 
+  align-content: center;
+}
+
+.overlay-text-img span{
+  font-family: Roboto;
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  margin-left: 20px;
+  position: relative;
+}
+.container-img:hover .overlay-text-img {
+  width: 40%;
+  cursor: pointer;
+}
+
+.overlay-text-img .letsgo::after {
+  content: '';
+  position: absolute;
+  bottom: 0; 
+  left: 0;
+  width: 50%;
+  height: 3px;
+  background-color: white;
+  transition: width 0.5s ease; 
+}
+
+.container-img:hover .overlay-text-img .letsgo::after {
+  width: 100%; 
+}
+
+.mid-black-logos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.dark-logos{
+  align-items: center;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.segitiga-kiri2{
+  align-content: center;
+}
+
+.segitiga-kanan2 {
+  transform: scaleX(-1);
+  align-content: center;
+
+}
+
+
+
 
 
