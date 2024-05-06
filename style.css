@@ -129,16 +129,17 @@
 }
 
 .input-field-local-gym input {
-  width: 400px;
+  width: 500px;
   font-size: 20px;
   padding: 10px;
   border: none;
   border-bottom: 2px solid red;
   outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); 
 }
 ::placeholder {
   color: rgb(0, 0, 0);
-  opacity: 1;
+  font-size: 14px;
 }
 
 #bottone1 {
@@ -148,7 +149,7 @@
   text-align: center;
   cursor: pointer;
   transition: 0.4s;
-  width: 50%;
+  width: 30%;
   color: white;
   font-size: 20px;
 }
@@ -188,10 +189,10 @@
   color: white;
   text-align: center;
   line-height: 1.2rem;
-  height: 9rem;
+  height: 10rem;
   overflow: hidden;
   width: 16rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
 }
 
 .title-globe {
