@@ -138,28 +138,69 @@
 }
 ::placeholder {
   color: rgb(0, 0, 0);
-  opacity: 1; 
+  opacity: 1;
 }
 
-
 #bottone1 {
-    background: #c41230;
-    border: none;
-    font-family: inherit;
-    text-align: center;
-    cursor: pointer;
-    transition: 0.4s;
-    width: 50%;
-    color: white;
-    font-size: 20px;
-   }
-   
-   #bottone1:hover {
-    box-shadow: 7px 5px 56px -14px #ff002b;
-    background-color: #ff002b;
-   }
-   
-   #bottone1:active {
-    transform: scale(0.97);
-    box-shadow: 7px 5px 56px -10px #ff002b;
-   }
+  background: #c41230;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #ff002b;
+  background-color: #ff002b;
+}
+
+#bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #ff002b;
+}
+
+.why-world-gym {
+  background-color: black;
+  padding-top: 3rem;
+}
+
+.title-wwg {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 16px;
+}
+
+.world-globe {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.desc {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  line-height: 1.2rem;
+  height: 9rem;
+  overflow: hidden;
+  width: 16rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.title-globe {
+  color: white;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 12px;
+}
+
+.segitiga-kanan {
+  transform: scaleX(-1);
+}
