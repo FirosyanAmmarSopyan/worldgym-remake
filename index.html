@@ -453,7 +453,11 @@
             true to our roots.
           </div>
           <div class="bold-title2" id="experienceText">Experience Matters</div>
-          <label onclick="toggleVisibility()" id="continueLabel" class="continue-reading" >
+          <label
+            onclick="toggleVisibility()"
+            id="continueLabel"
+            class="continue-reading"
+          >
             <div class="title-continue">
               Continue Read
               <span class="icon-span-plus">
@@ -509,16 +513,66 @@
               Why? Because we’re REAL. We’re AUTHENTIC. We’re LEGENDARY.
             </div>
           </div>
-          <label class="read-less"     id="readLess" onclick="unTogVisibility()" >
+          <label class="read-less" id="readLess" onclick="unTogVisibility()">
             <div class="title-read">
-            Read less
+              Read less
               <span class="icon-span-minus">
                 <img src="./assets/ic_minus.svg" alt="" />
               </span>
             </div>
           </label>
         </div>
-        <div class="img-story">tes</div>
+        <div class="img-story">
+          <div class="story-img1">
+            <img src="./assets/img-1.jpeg" />
+          </div>
+          <div class="container-btm-img">
+            <div class="button-carousel">
+              <button>
+                <svg fill="#000000" width="30px" height="30px" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                
+                <g id="SVGRepo_iconCarrier"> <title>left</title> <path d="M7.094 15.938l7.688 7.688-3.719 3.563-11.063-11.063 11.313-11.344 3.531 3.5z"/> </g>
+                
+                </svg></button>
+              <button>
+                <svg fill="#000000" width="30px" height="30px" viewBox="-8.5 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                  
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                  
+                  <g id="SVGRepo_iconCarrier"> <title>right</title> <path d="M7.75 16.063l-7.688-7.688 3.719-3.594 11.063 11.094-11.344 11.313-3.5-3.469z"/> </g>
+                  
+                  </svg>
+              </button>
+            </div>
+            <div>
+              <button id="bottone2"><strong>VIEW OUR PHOTO GALLERY</strong></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="container-information">
+      <div class="title-bold-information">
+        STAY INFORMED & GET FIT
+      </div>
+      <div class="arrow-full">
+        <svg width="2020" height="23" viewBox="0 0 1020 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M888.379 0H494V26.5V53H888.379L922.285 26.5L888.379 0Z" fill="#CF0023"/>
+          <path d="M985.181 0H954.666L988.571 26.5L954.666 53H985.181L1019.09 26.5L985.181 0Z" fill="#CF0023"/>
+          <path d="M937.713 0H907.198L941.104 26.5L907.198 53H937.713L971.619 26.5L937.713 0Z" fill="#CF0023"/>
+          <path d="M130.707 53L525.086 53V26.5V-1.99221e-06L130.707 -1.99221e-06L96.8017 26.5L130.707 53Z" fill="#CF0023"/>
+          <path d="M33.9055 53L64.4205 53L30.515 26.5L64.4205 -1.43051e-06L33.9055 -1.43051e-06L8.34465e-06 26.5L33.9055 53Z" fill="#CF0023"/>
+          <path d="M81.3733 53L111.888 53L77.9827 26.5L111.888 -1.43051e-06L81.3733 -1.43051e-06L47.4678 26.5L81.3733 53Z" fill="#CF0023"/>
+          </svg>
+      </div>
+      <div class="title-mini-get-gym">
+        Get the latest World Gym news, fitness tips, & exclusive offers delivered straight to your inbox.
       </div>
     </div>
     <!-- Content -->
@@ -527,30 +581,30 @@
 
 <script>
   function toggleVisibility() {
-    console.log('clicked! toggle')
-    var continueLabel = document.getElementById("continueLabel")
-    var hiddenText = document.getElementById("hiddenText")
-    var lessLabel = document.getElementById("readLess")
-    var experienceText = document.getElementById('experienceText')
-    continueLabel.style.display = "none"
-    hiddenText.style.display = "block"
-    lessLabel.style.display = "block"
+    console.log("clicked! toggle");
+    var continueLabel = document.getElementById("continueLabel");
+    var hiddenText = document.getElementById("hiddenText");
+    var lessLabel = document.getElementById("readLess");
+    var experienceText = document.getElementById("experienceText");
+    continueLabel.style.display = "none";
+    hiddenText.style.display = "block";
+    lessLabel.style.display = "block";
     hiddenText.style.maxHeight = hiddenText.scrollHeight + "px";
-  
-    var boldTitle2 = document.querySelector('.bold-title2');
-    boldTitle2.style.background = '#000'; 
-    boldTitle2.style.webkitBackgroundClip = 'text';
-    boldTitle2.style.webkitTextFillColor = 'transparent';
+
+    var boldTitle2 = document.querySelector(".bold-title2");
+    boldTitle2.style.background = "#000";
+    boldTitle2.style.webkitBackgroundClip = "text";
+    boldTitle2.style.webkitTextFillColor = "transparent";
   }
 
-  function unTogVisibility(){
-    console.log('clicked! untoggle')
-    var continueLabel = document.getElementById("continueLabel")
-    var hiddenText = document.getElementById("hiddenText")
-    var lessLabel = document.getElementById("readLess")
-    continueLabel.style.display = "block"
-    hiddenText.style.display = "none"
-    lessLabel.style.display = "none"
+  function unTogVisibility() {
+    console.log("clicked! untoggle");
+    var continueLabel = document.getElementById("continueLabel");
+    var hiddenText = document.getElementById("hiddenText");
+    var lessLabel = document.getElementById("readLess");
+    continueLabel.style.display = "block";
+    hiddenText.style.display = "none";
+    lessLabel.style.display = "none";
     hiddenText.style.maxHeight = null;
   }
 </script>
