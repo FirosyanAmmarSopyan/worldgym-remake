@@ -141,7 +141,7 @@
   font-size: 20px;
   padding: 10px;
   border: none;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #c41230;
   outline: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
@@ -700,7 +700,8 @@ input:valid ~ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px;
+  padding: 40px;
+  position: relative;
 }
 
 .title-bold-information{
@@ -712,10 +713,144 @@ input:valid ~ label {
 }
 
 .title-mini-get-gym{
-  font-size: 22px;
-  color: red;
+  font-size: 16px;
+  color: rgb(196, 196, 196);
+  font-family: "Inter", sans-serif;
+  margin: 10px 0 30px 0;
 }
 
 .arrow-full{
   margin: 15px 0 15px 0;
+  width: 100%;
+}
+
+.form-information{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-information input{
+  width: 220px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #c41230;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+#bottone3 {
+  background: #c41230;
+  border: none;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  font-size: 18px;
+}
+
+#bottone3:hover {
+  box-shadow: 7px 5px 56px -14px #ff002b;
+  background-color: #ff002b;
+}
+
+#bottone3:active {
+  box-shadow: 7px 5px 56px -10px #ff002b;
+}
+
+.some-title{
+  font-size: 13px;
+  color: rgb(196, 196, 196);
+  font-family: "Inter", sans-serif;
+  margin: 20px 0 30px 0;
+  text-align: center;
+  width: 75%;
+}
+
+.some-title span{
+  text-decoration: underline;
+}
+
+.some-title span:hover{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.gym-information{
+  background-color: #1a1a1a;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 70px 20px 30px 20px;
+}
+
+.float-button {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.btm-logo-light img {
+  max-width: 65%;
+  max-height: 65%;
+  display: block; 
+  margin: auto;
+}
+
+.btm-logo-light img:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.container-phone-number{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: 50px 0 20px 0;
+  width: 100%;
+  background-color: aqua;
+}
+
+.content-information{
+  display: flex;
+  width: auto;
+  padding: 0px 0px 0px 130px;
+  gap: 20px;
+  justify-content: center;
+  margin: 30px 10px 30px 10px;
+}
+
+.phone{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.loc{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.phn-icn{
+  width: 20px;
+}
+
+.loc-icn{
+  width: 20px;
 }
