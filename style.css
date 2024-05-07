@@ -509,30 +509,9 @@ input:valid ~ label {
   font-size: 24px;
   font-weight: bolder;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-.continue-reading {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.hide {
-  font-size: 16px;
-  color: black;
-  font-weight: 700;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  border-bottom: 2px solid #c41230;
-  position: relative;
-  padding-bottom: 5px;
-}
-
-.icon-span-plus {
-  position: absolute;
-  top: -19px;
-  right: 0px;
-  font-size: 28px;
-  background-color: white;
-  padding: 5px;
+  background: linear-gradient(to bottom, #222222 50%, #ffffff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .story-ln3 {
@@ -580,4 +559,87 @@ input:valid ~ label {
 
 .story-ln4 span{
   font-weight: 700;
+}
+
+.bold-title4{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.story-ln5 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
+
+.story-ln6 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
+
+.continue-reading {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title-continue {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 2px solid #c41230;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.icon-span-minus {
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  font-size: 28px;
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+}
+.icon-span-plus {
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  font-size: 28px;
+  background-color: white;
+  padding: 5px;
+}
+.title-read {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 2px solid #c41230;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+#hiddenText{
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+#continueLabel{
+  display: block;
+  transition:  0.5s ease;
+
+}
+
+#readLess{
+  display: none;
+  margin-top: 20px;
 }

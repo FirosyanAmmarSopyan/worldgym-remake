@@ -452,43 +452,71 @@
             forefront of fitness innovation while at the same time remaining
             true to our roots.
           </div>
-          <div class="bold-title2">Experience Matters</div>
-          <!-- <a class="continue-reading" href="#">
-            <div class="hide">
-              Continue Reading
+          <div class="bold-title2" id="experienceText">Experience Matters</div>
+          <label onclick="toggleVisibility()" id="continueLabel" class="continue-reading" >
+            <div class="title-continue">
+              Continue Read
               <span class="icon-span-plus">
-                <img src="./assets/ic_plus.svg" alt="">
+                <img src="./assets/ic_plus.svg" alt="" />
               </span>
             </div>
-          </a> -->
-          <div class="story-ln3">
-            We do it better, because we’ve done it longer. Experience matters-
-            and our years of experience have helped us formulate the right blend
-            of people, technology, programming, environments and equipment to
-            better help all those who are serious about improving the quality of
-            their lives and reaching their goals no matter what those may be.
+          </label>
+          <div id="hiddenText">
+            <div class="story-ln3">
+              We do it better, because we’ve done it longer. Experience matters-
+              and our years of experience have helped us formulate the right
+              blend of people, technology, programming, environments and
+              equipment to better help all those who are serious about improving
+              the quality of their lives and reaching their goals no matter what
+              those may be.
+            </div>
+            <div class="bold-title3">
+              Many of our gyms offer the following amenities:
+            </div>
+            <div class="list-gym">
+              <ul>
+                <li>Personal training and coaching</li>
+                <li>Group fitness classes</li>
+                <li>Body composition analysis</li>
+                <li>World Gym Athletics program</li>
+                <li>Barbell Café</li>
+                <li>Pro Shop</li>
+                <li>Recovery and Wellness options</li>
+                <li>Indoor Turf Training</li>
+                <li>Dedicated Ab and Glute Training Zones</li>
+                <li>Tanning</li>
+                <li>Red Light Therapy</li>
+              </ul>
+            </div>
+            <div class="story-ln4">
+              World Gym offers a modern fitness experience without the fluff.
+              From <span>weight loss to muscle building</span>, we’ll help you
+              embrace your inner athlete.
+            </div>
+            <div class="bold-title4">Be the Best Version of Yourself</div>
+            <div class="story-ln5">
+              Whether you are new to working out or are continuing your fitness
+              journey, our gym is serious about delivering great results. A
+              strong body and mind go hand in hand, and we have everything you
+              need to reach your health and fitness goals. Our gym is designed
+              for all body types and fitness levels and we provide a supportive,
+              encouraging and safe environment to reach your goals. Many of our
+              gyms also have women’s-only workout areas or comfort zones
+              allowing for an even more comfortable experience for our members.
+            </div>
+            <div class="story-ln6">
+              World Gym is THE place to become the best version of yourself.
+              Why? Because we’re REAL. We’re AUTHENTIC. We’re LEGENDARY.
+            </div>
           </div>
-          <div class="bold-title3">
-            Many of our gyms offer the following amenities:
-          </div>
-          <div class="list-gym">
-            <ul>
-              <li>Personal training and coaching</li>
-              <li>Group fitness classes</li>
-              <li>Body composition analysis</li>
-              <li>World Gym Athletics program</li>
-              <li>Barbell Café</li>
-              <li>Pro Shop</li>
-              <li>Recovery and Wellness options</li>
-              <li>Indoor Turf Training</li>
-              <li>Dedicated Ab and Glute Training Zones</li>
-              <li>Tanning</li>
-              <li>Red Light Therapy</li>
-            </ul>
-          </div>
-          <div class="story-ln4">
-            World Gym offers a modern fitness experience without the fluff.  From <span>weight loss to muscle building</span>, we’ll help you embrace your inner athlete.
-          </div>
+          <label class="read-less"     id="readLess" onclick="unTogVisibility()" >
+            <div class="title-read">
+            Read less
+              <span class="icon-span-minus">
+                <img src="./assets/ic_minus.svg" alt="" />
+              </span>
+            </div>
+          </label>
         </div>
         <div class="img-story">tes</div>
       </div>
@@ -496,3 +524,33 @@
     <!-- Content -->
   </body>
 </html>
+
+<script>
+  function toggleVisibility() {
+    console.log('clicked! toggle')
+    var continueLabel = document.getElementById("continueLabel")
+    var hiddenText = document.getElementById("hiddenText")
+    var lessLabel = document.getElementById("readLess")
+    var experienceText = document.getElementById('experienceText')
+    continueLabel.style.display = "none"
+    hiddenText.style.display = "block"
+    lessLabel.style.display = "block"
+    hiddenText.style.maxHeight = hiddenText.scrollHeight + "px";
+  
+    var boldTitle2 = document.querySelector('.bold-title2');
+    boldTitle2.style.background = '#000'; 
+    boldTitle2.style.webkitBackgroundClip = 'text';
+    boldTitle2.style.webkitTextFillColor = 'transparent';
+  }
+
+  function unTogVisibility(){
+    console.log('clicked! untoggle')
+    var continueLabel = document.getElementById("continueLabel")
+    var hiddenText = document.getElementById("hiddenText")
+    var lessLabel = document.getElementById("readLess")
+    continueLabel.style.display = "block"
+    hiddenText.style.display = "none"
+    lessLabel.style.display = "none"
+    hiddenText.style.maxHeight = null;
+  }
+</script>
