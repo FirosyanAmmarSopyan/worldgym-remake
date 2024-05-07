@@ -854,3 +854,43 @@ input:valid ~ label {
 .loc-icn{
   width: 20px;
 }
+
+.phn-number{
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loc-address{
+  font-size: 16px;
+  color: white;
+  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btm-link{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.btm-link ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.btm-link ul li{
+  transition: 0.5s ease;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.btm-link ul li:hover{
+  color: #c41230;
+  cursor: pointer;
+  text-decoration: underline;
+}
