@@ -386,12 +386,11 @@ input:valid ~ label {
   position: relative;
   width: 100%;
   transition: box-shadow 0.3s ease;
-
 }
 
 .container-img:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 0, 0, 0.5);
-  transition: box-shadow 0.3s ease; 
+  transition: box-shadow 0.3s ease;
 }
 
 .overlay-text-img {
@@ -401,15 +400,15 @@ input:valid ~ label {
   width: 32%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white; 
-  text-align: center; 
-  padding: 20px; 
-  box-sizing: border-box; 
-  transition: width 0.5s; 
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: width 0.5s;
   align-content: center;
 }
 
-.overlay-text-img span{
+.overlay-text-img span {
   font-family: Roboto;
   font-size: 26px;
   color: rgb(255, 255, 255);
@@ -423,52 +422,162 @@ input:valid ~ label {
 }
 
 .overlay-text-img .letsgo::after {
-  content: '';
+  content: "";
   position: absolute;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   width: 50%;
   height: 3px;
   background-color: white;
-  transition: width 0.5s ease; 
+  transition: width 0.5s ease;
 }
 
 .container-img:hover .overlay-text-img .letsgo::after {
-  width: 100%; 
+  width: 100%;
 }
 
-.mid-black-logos{
+.mid-black-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.dark-logos{
+.dark-logos {
   align-items: center;
   gap: 10px;
   margin-top: 35px;
 }
 
-.segitiga-kiri2{
+.segitiga-kiri2 {
   align-content: center;
 }
 
 .segitiga-kanan2 {
   transform: scaleX(-1);
   align-content: center;
-
 }
 
-.title-gym-read{
-  font-size: 40px;
+.text-story {
+  width: 100%;
+}
+
+.img-story {
+  width: 100%;
+}
+.title-gym-read {
+  font-size: 42px;
   font-weight: bolder;
-  font-family: 'Suravaram' , serif;
-  max-width: 30%;
+  font-family: "Suravaram", serif;
+  max-width: 75%;
   line-height: 70%;
 }
 
+.story-gym {
+  margin-top: 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
 
+.bold-title {
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
+.story-ln1 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
 
+.story-ln2 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
 
+.bold-title2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.continue-reading {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hide {
+  font-size: 16px;
+  color: black;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  border-bottom: 2px solid #c41230;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.icon-span-plus {
+  position: absolute;
+  top: -19px;
+  right: 0px;
+  font-size: 28px;
+  background-color: white;
+  padding: 5px;
+}
+
+.story-ln3 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
+
+.bold-title3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.list-gym ul {
+  list-style: none; 
+  padding-left: 25px;
+}
+
+.list-gym li{
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+.list-gym li::before {
+  content: '\2022'; 
+  color: #c41230; 
+  display: inline-block;
+  font-size: 28px;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.story-ln4 {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 15px;
+  max-width: 90%;
+  font-family: "Inter", sans-serif;
+}
+
+.story-ln4 span{
+  font-weight: 700;
+}
